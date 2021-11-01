@@ -100,15 +100,6 @@ def finish_todo(todo_id):
         db.session.commit()
     return redirect(url_for("home"))
 
-# edit pa aayusin boii
-# @app.route('/edit-id/<int:todo_id>')
-# def get_edit_id(todo_id):
-#     print(todo_id, "wala")
-#     print("wala")
-#     session['edit_id'] = todo_id
-#     print(session['edit_id'])
-#     return redirect(url_for('home'))
-
 
 @app.route('/edit/<int:todo_id>', methods=["POST"])
 @login_required
